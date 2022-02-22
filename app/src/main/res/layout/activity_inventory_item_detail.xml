@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.receptionviews.InventoryItemDetail"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:id="@+id/toolbar"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    >
+
+                </Button>
+                <TextView
+                    android:id="@+id/title_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin sản phẩm kho"
+                    android:layout_marginLeft="40dp"
+                    android:foregroundGravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/ln_fill_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/name_edt_invetory_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng nhập"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/quantity_edt_invetory_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá tiền"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/price_edt_invetory_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày nhập"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/date_edt_invetory_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả sản phẩm"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/description_edt_invetory_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_linner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <Button
+            android:id="@+id/delete_btn_invetory_item_detail"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Xóa"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/update_btn_invetory_item_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Cập nhật"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

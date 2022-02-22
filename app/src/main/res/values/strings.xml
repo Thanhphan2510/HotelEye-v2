@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hoteleye</string>
+    <string-array name="hotel_level">
+        <item>1 sao</item>
+        <item>2 sao</item>
+        <item>3 sao</item>
+        <item>4 sao</item>
+        <item>5 sao</item>
+    </string-array>
+</resources>

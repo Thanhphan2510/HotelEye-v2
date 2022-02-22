@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.receptionviews.CheckIn"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:id="@+id/toolbar"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/btnBack_checkin"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    >
+
+                </Button>
+                <TextView
+                    android:id="@+id/title_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin nhận phòng"
+                    android:layout_marginLeft="40dp"
+                    android:foregroundGravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/ln_fill_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số CMT Khách hàng"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/create_customer_tv_checkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo Khách hàng mới"
+                android:layout_weight="1"
+                android:textColor="#000102"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/idcard_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Khách hàng"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/name_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại liên hệ"/>
+        <EditText
+            android:id="@+id/phone_number_ed_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian nhận phòng"/>
+        <EditText
+            android:id="@+id/checkin_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt cọc"/>
+        <EditText
+            android:id="@+id/deposit_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phòng đặt"/>
+        <EditText
+            android:id="@+id/room_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú"/>
+        <EditText
+            android:id="@+id/note_edt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next_btn_checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhận phòng"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "213420584506",
+    "project_id": "hoteleye-3016a",
+    "storage_bucket": "hoteleye-3016a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213420584506:android:a74698f1229f356fce8f03",
+        "android_client_info": {
+          "package_name": "com.example.hoteleye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213420584506-2rtanlk8iqj14e615823t1r7hadcmbf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1fzHVnE6lCEn7OEnfrCpVS43FC_5O59A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213420584506-2rtanlk8iqj14e615823t1r7hadcmbf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

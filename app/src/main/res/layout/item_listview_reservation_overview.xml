@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/room_name_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Số phòng" />
+
+        <TextView
+            android:id="@+id/reservation_date_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Ngày đặt phòng" />
+
+        <TextView
+            android:id="@+id/checkin_date_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Ngày check in" />
+        <TextView
+        android:id="@+id/checkout_date_item_listview_overview_reservation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cell_shape"
+        android:ellipsize="marquee"
+        android:lines="3"
+        android:singleLine="true"
+        android:text="Ngày check out" />
+
+        <TextView
+            android:id="@+id/customer_name_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Tên khách hàng" />
+
+        <TextView
+            android:id="@+id/deposit_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Đặt cọc" />
+        <TextView
+            android:id="@+id/note_item_listview_overview_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Ghi chú" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

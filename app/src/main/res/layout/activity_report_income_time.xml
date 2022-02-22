@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.managerviews.ReportIncomeTime">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:id="@+id/toolbar"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    >
+
+                </Button>
+                <TextView
+                    android:id="@+id/title_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông kê doanh thu theo thời gian"
+                    android:layout_marginLeft="35dp"
+                    android:foregroundGravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/ln_fill_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:padding="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="#0C0C0C"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/edt_checkin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18h00 06/12/2020"
+                android:textColor="#0C0C0C"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/a1"/>
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="126dp"
+                android:text="Đến"
+                android:textColor="#0C0C0C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/edt_checkout_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="20h00 08/12/2020 "
+                android:textColor="#0C0C0C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/a2" />
+            <Button
+                android:id="@+id/edt_checkout_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Xem"
+                android:textColor="#00060B"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/edt_checkout_date" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFAB40">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="STT"
+                android:layout_weight="1"
+                android:textColor="#0C0C0C"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#0C0C0C"
+                android:text="Phòng" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Giờ vào"
+                android:layout_weight="1"
+                android:textColor="#0C0C0C"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Giờ ra"
+                android:layout_weight="1"
+                android:textColor="#0C0C0C"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền"
+                android:layout_weight="1"
+                android:textColor="#0C0C0C"
+                android:gravity="center"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/room_listview_report_income_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal|vertical"
+            android:divider="@null"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

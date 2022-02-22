@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/idcard_item_listview_employee_manager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Số CMT"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:background="@drawable/cell_shape"
+            />
+
+        <TextView
+            android:id="@+id/name_item_listview_employee_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:text="Tên" />
+
+
+        <TextView
+            android:id="@+id/date_item_listview_employee_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Ngày sinh"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:background="@drawable/cell_shape"/>
+        <TextView
+            android:id="@+id/phone_number_item_listview_employee_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="số điện thoại"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:background="@drawable/cell_shape"/>
+        <TextView
+            android:id="@+id/account_item_listview_employee_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="tài khoản"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:background="@drawable/cell_shape"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

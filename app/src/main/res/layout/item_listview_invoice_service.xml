@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_item_listview_invoice_service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="STT"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:paddingLeft="5dp"
+            android:background="@drawable/cell_shape"
+            />
+
+        <TextView
+            android:id="@+id/name_item_listview_invoice_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="marquee"
+            android:lines="3"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:text="Dịch vụ/Sản phẩm" />
+
+        <TextView
+            android:id="@+id/quantity_item_listview_invoice_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:gravity="right"
+            android:paddingEnd="5dp"
+            android:background="@drawable/cell_shape" />
+
+        <TextView
+            android:id="@+id/price_item_listview_invoice_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đơn giá"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:gravity="right"
+            android:paddingEnd="5dp"
+            android:background="@drawable/cell_shape"/>
+        <TextView
+            android:id="@+id/amount_item_listview_invoice_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thành tiền"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:lines="3"
+            android:gravity="right"
+            android:paddingEnd="5dp"
+            android:background="@drawable/cell_shape"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
