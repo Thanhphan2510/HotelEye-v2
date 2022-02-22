@@ -223,11 +223,10 @@ public class MyUtils {
         return currencyVN.format((double)cost).replace(",","!").replace(".",",").replace("!",".");
     }
 
-    public static List<Object> fromJSon(String jsonString){
+    public static <T> List<T> fromJSon(String jsonString, Class<T[]> clazz){
         Gson gson = new Gson();
         try {
-            List<Object> list = Arrays.asList(gson.fromJson(jsonString, Object[].class));
-            return list;
+            return Arrays.asList(gson.fromJson(jsonString, clazz));
         } catch (Exception e) {
             e.printStackTrace();
         }

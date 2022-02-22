@@ -194,14 +194,18 @@ public class ReceptionHome extends AppCompatActivity {
 
                 final String myResponse = response.body().string();
 
+
                 ReceptionHome.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         Log.e("thanhpt", "run: "+myResponse );
-                        List<Room> roomResponse = (List<Room>)(Object) MyUtils.fromJSon(myResponse);
+                        List<Room> roomResponse = (List<Room>)(Object) MyUtils.fromJSon(myResponse, Room[].class);
                         roomNameItems = RoomConverter.covertRoomsToRoomNameItems(roomResponse);
                         Collections.sort(roomNameItems);
+                        adapter = new ReceptionHomeAdapter(getApplicationContext(), roomNameItems);
+                        recyclerView.setAdapter(adapter);
                         adapter.notifyDataSetChanged();
+
 
                     }
                 });
@@ -213,8 +217,9 @@ public class ReceptionHome extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 4));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        adapter = new ReceptionHomeAdapter(getApplicationContext(), roomNameItems);
-        recyclerView.setAdapter(adapter);
+
+
+//        adapter.notifyDataSetChanged();
 
         switchrole_tv.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,6 +12,7 @@ public class RoomConverter {
             return null;
         }
         RoomNameItem result = new RoomNameItem();
+        result.setRoomID(String.valueOf(room.getId()));
         result.setName(String.valueOf(room.getRoom_number()));
         result.setRoom_status(room.getStatus());
         return result;

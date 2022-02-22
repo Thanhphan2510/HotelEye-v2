@@ -1,6 +1,7 @@
 package com.example.hoteleye.databases.entities;
 
 public class Room {
+    private long id;
     private int room_number;
     private RoomType roomType;
     private int floor_number;
@@ -21,6 +22,14 @@ public class Room {
         this.description = description;
         this.status = status;
         this.note = note;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public int getRoom_number() {
